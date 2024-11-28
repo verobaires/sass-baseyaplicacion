@@ -1,0 +1,29 @@
+@use "../util/mixin";
+
+
+footer {
+
+    .footer-content {
+        /* display: flex;
+    justify-content: space-evenly;   
+    flex-wrap: wrap; */
+        @include mixin.flex (row, space-evenly, inherit, wrap);
+        margin: 20px auto;
+
+
+        .net {
+            width: 50%;
+
+            ul {
+                /* display: flex;
+        justify-content: space-evenly; */
+                @include mixin.flex (row, space-evenly, inherit, inherit);
+            }
+        }
+
+    }
+
+    .whatsapp img {
+        width: 50px;
+    }
+}

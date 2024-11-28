@@ -1,0 +1,26 @@
+//mixin sin parametros que toma un mapa de base para el color de fondo de los botones
+$colores-botones: (
+  1: #d65db1,  // Primer botón
+  2: #f2ebfd,  // Segundo botón
+  3: #8a79ab   // Tercer botón
+);
+
+@mixin estilos-botones {
+    //Este bucle comienza en 1 y termina en el número total de colores definidos en el mapa $colores-botones
+  //si se agrega mas botones al mapa los toma en cuenta automaticamente no hay que contar
+  @for $i from 1 through length($colores-botones) {
+    &:nth-of-type(#{$i}) .buttons {
+      background-color: map-get($colores-botones, $i);
+    }
+  }
+}
+
+//mixin con parametros
+@mixin flex ($direccion, $justify-c, $align-i, $wrap){
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify-c;
+    align-items: $align-i;
+    flex-wrap: $wrap;
+}
+

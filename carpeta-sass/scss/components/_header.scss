@@ -1,0 +1,16 @@
+header {
+
+    nav.bg-body-tertiary {
+        background-color: #886f9f !important;
+
+        ul.navbar-nav_adjust {
+            margin-left: auto !important;
+
+            .nav-item {
+                .nav-link {
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

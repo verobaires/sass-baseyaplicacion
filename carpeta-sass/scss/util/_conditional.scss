@@ -1,0 +1,17 @@
+$season: none;
+//los valores de las variables son carnaval, pascua, navidad
+
+.banner{
+    //siempre doble igual
+    @if $season == carnaval {
+        //cuidado las rutas deben pensarse desde el css no desde este archivo scss
+        background-image: url(./img/carnaval-banner.png);
+    }
+    @else if $season == pascua {
+        background-image: url(./img/eastern-banner.png);
+    }
+
+    @else if $season == navidad {
+        background-image: url(./img/christmas-banner.png);
+    }
+}

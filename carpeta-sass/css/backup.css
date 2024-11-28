@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Anton SC", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+h1{
+  font-size: 5rem; /* 1rem = 14px */
+}
+
+h2{
+  font-size: 3.75rem;
+}
+
+h3{
+  font-size: 2.5rem;
+}
+
+.bg-body-tertiary {
+  background-color: #886f9f !important;
+
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar-nav_adjust {
+  margin-left: auto !important;
+}
+
+.navbar-nav_adjust .nav-item .nav-link {
+  font-weight: 800;
+}
+
+.hero {
+  margin: 50px auto;
+}
+
+.btn_hero {
+  border: 1px solid #e5b2c3;
+  background-color: yellow;
+}
+
+.btn_hero:hover {
+  color: white;
+  background-color: dimgray;
+}
+
+
+.carousel-item img {
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.carousel-item h3,
+.carousel-item p {
+  color: rgb(116, 4, 106);
+  text-shadow: 2px 2px 2px yellowgreen;
+}
+
+.banner {
+  background-image: url(../img//fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  margin-bottom: 30px;
+}
+
+.mas-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mas-info .myCard {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mas-info .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.buttons {
+  border-radius: 25px;
+  padding: 8px;
+  border: none;
+}
+
+.mas-info .myCard:nth-of-type(1) .buttons{
+  background-color: #d65db1;
+}
+
+.mas-info .myCard:nth-of-type(2) .buttons{
+  background-color: #f2ebfd;
+}
+.mas-info .myCard:nth-of-type(3) .buttons{
+  background-color: #8a79ab;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  flex-wrap: wrap;
+}
+
+.footer-content .net {
+  width: 50%;
+}
+
+.footer-content ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.whatsapp img {
+  width: 50px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .carousel-item img {
+    height: 30vh;
+    object-fit: cover;
+  }
+
+  .card img {
+    margin: auto;
+  }
+
+  h1{
+    font-size: 2.5rem; /* 1rem = 14px */
+  }
+  
+  h2{
+    font-size: 1.875rem;
+  }
+  
+  h3{
+    font-size: 1.25rem;
+  }
+
+  .mas-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .mas-info .myCard {
+    width: auto;}
+
+}

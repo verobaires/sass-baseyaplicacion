@@ -1,0 +1,22 @@
+@use "../util/variables";
+
+body {
+  //deben incluir al usar @use en que archivo se encuentra la variable
+  //pueden aplicar @forward para estilos globales es la version mas moderna de sass
+    font-family: variables.$font-ppal;
+  }
+  
+  h1,
+  h2 {
+    font-family: variables.$font-secondary;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: variables.$color-link;
+  }
+  

@@ -1,0 +1,18 @@
+@use "./global/font";
+@use "./global/reset";
+@use "./global/logo";
+
+//estos dos al usar use se deben vincular en cada partial que lo use o aplicar la regla @forward
+/* @use "./util/variables";
+@use "./util/mixin"; */
+@use "./util/bucle";
+@use "./util/extend";
+@use "./util/conditional";
+
+@use "./components/header";
+
+@use "./pages/main-index";
+
+@use "./components/footer";
+
+@use "./components/media-query";

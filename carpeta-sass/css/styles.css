@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Anton SC", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* @use "./util/variables";
+@use "./util/mixin"; */
+h1 {
+  font-size: 5rem;
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 3.75rem;
+}
+@media (max-width: 400px) {
+  h2 {
+    font-size: 1.875rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+@media (max-width: 400px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+header nav.bg-body-tertiary {
+  background-color: #886f9f !important;
+}
+header nav.bg-body-tertiary ul.navbar-nav_adjust {
+  margin-left: auto !important;
+}
+header nav.bg-body-tertiary ul.navbar-nav_adjust .nav-item .nav-link {
+  font-weight: 800;
+}
+
+main .hero {
+  margin: 50px auto;
+}
+main .hero .hero-ppal .carousel-hero .carousel-inner .carousel-item img {
+  max-height: 80vh;
+  object-fit: cover;
+}
+main .hero .hero-ppal .carousel-hero .carousel-inner .carousel-item h3,
+main .hero .hero-ppal .carousel-hero .carousel-inner .carousel-item p {
+  color: rgb(116, 4, 106);
+  text-shadow: 2px 2px 2px yellowgreen;
+}
+main .hero .info-hero .btn_hero {
+  border: 1px solid #e5b2c3;
+  background-color: yellow;
+}
+main .hero .info-hero .btn_hero:hover {
+  color: white;
+  background-color: rgb(95, 67, 67);
+}
+main .banner {
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35vh;
+  margin-bottom: 30px;
+}
+main .mas-info {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: inherit;
+  flex-wrap: wrap;
+}
+main .mas-info .myCard {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .mas-info .myCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+main .mas-info .myCard .card-body .buttons {
+  border-radius: 25px;
+  padding: 8px;
+  border: none;
+}
+main .mas-info .myCard:nth-of-type(1) .buttons {
+  background-color: #d65db1;
+}
+main .mas-info .myCard:nth-of-type(2) .buttons {
+  background-color: #f2ebfd;
+}
+main .mas-info .myCard:nth-of-type(3) .buttons {
+  background-color: #8a79ab;
+}
+
+footer .footer-content {
+  /* display: flex;
+  justify-content: space-evenly;   
+  flex-wrap: wrap; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: inherit;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+footer .footer-content .net {
+  width: 50%;
+}
+footer .footer-content .net ul {
+  /* display: flex;
+  justify-content: space-evenly; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: inherit;
+  flex-wrap: inherit;
+}
+footer .whatsapp img {
+  width: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .hero-ppal .carousel-hero .carousel-inner .carousel-item img {
+    height: 30vh;
+    object-fit: cover;
+  }
+  main .mas-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .mas-info .myCard {
+    width: auto;
+  }
+  main .mas-info .myCard img {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

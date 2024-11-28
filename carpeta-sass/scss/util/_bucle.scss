@@ -1,0 +1,24 @@
+
+//para establecer tamaño de tipografia uniforme usamos un bucle
+//creamos el mapa de referencia tipos-titulos
+//con @each decimos que tenemos una key = $titulo, y un valor = $tamaño, entonces tomamos del mapa, 
+// cada par se aplicara para desktop y para mobile al 50% 
+
+$tipos-titulos: (
+  h1: 5rem,    // h1
+  h2: 3.75rem, // h2
+  h3: 2.5rem   // h3
+);
+
+@each $titulo, $tamano in $tipos-titulos {
+  $tamano-mobile: $tamano * 0.5; // 50% del tamaño para mobile
+
+  #{$titulo} {
+    font-size: $tamano; // Tamaño para desktop
+
+    @media (max-width: 400px) {
+      font-size: $tamano-mobile; // Tamaño para mobile
+    }
+  }
+}
+
